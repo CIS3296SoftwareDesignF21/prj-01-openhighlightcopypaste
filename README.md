@@ -10,4 +10,5 @@ This software project will be using python language with opencv and pytesseract 
 
 # How to Run
 
-
+Run the following command from the top level of the repository 
+```python3 src/main.py ```
