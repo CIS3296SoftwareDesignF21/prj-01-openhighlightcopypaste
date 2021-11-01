@@ -2,6 +2,13 @@
 
 This software project will be using python language with opencv and pytesseract library to create a program which will take users pdf files and pictures and output their highlighted text. This program is important for students who use highlighting tool for notetaking since it can be robust to go through pages of files to review notes, it can be better to have all notes in one place. In addition to students, this program will benefit companies who wants to ...
 
+#### [Project Proposal](projectProposal.md)
+
+#### [Vision Statement and Personas](Vision_Personas.md)
+
+### Project Contributions and Accomplishments
+* [Week 1](week1.md)
+
 
 # How to Install
 
