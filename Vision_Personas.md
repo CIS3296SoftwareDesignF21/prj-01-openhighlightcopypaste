@@ -3,7 +3,7 @@ FOR students WHO work with poorly scanned PDFs or paper handouts, openHighlightC
 
 ## Personas
 #### Charlie
-
+Charlie, 17, is a student leader in the high school marching band. They are the treasurer, and so they’re in charge of running the yearly fundraising ad campaign. A binder of business leads which includes names, telephone numbers, addresses, email addresses, and names of owners is given to them. They are tasked with digitizing these records for ease of access. This way, students will be able to sell more ads to more businesses, and thus raise more money for the band. Charlie sits down with the binder and a box of highlighter pens. They highlight the names of the businesses in green, the telephone numbers in yellow, and so on. They then scan the binder into openHighlightCopyPaste, which returns a separate list of text for every highlighter color. It is easy to copy and paste the list of information, as each list is returned in a separate text file. Charlie copies and pastes each list in to a spreadsheet, and their task is done.
 
 #### Alex
 Alex, 20,  is an international student from Spain. She is currently studying at Temple University. She is Biology major but due to the robustness of her major classes she needs a tool to store her high-lighted notes. This will help her review important topics and terminology. Besides being a student, Alex enjoys the outdoors and music. She likes talking in Spanish with her fam/friends.
