@@ -1,5 +1,5 @@
 def main():
-    ourNames = ["Bri"]
+    ourNames = ["Bri", "Cecily"]
     decoration = "~~"
     i = 1
     for name in ourNames:
