@@ -8,9 +8,12 @@ def main():
 
 if __name__ == '__main__':
     main()
- 
+
+
+
 # Shivani's Hello World
 mylist = ['Shivani Patel!!','Yay, Final Project.','I love CS. :)']
 print('  '.join(mylist))
 print('**'.join(mylist))
 # End
+
