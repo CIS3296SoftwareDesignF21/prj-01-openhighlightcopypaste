@@ -13,7 +13,9 @@ This software project will be using python language with opencv and pytesseract 
 # How to Install
 
 1) Follow instructions [here](https://www.python.org) to install the latest version of python
-2) Run the following command to clone the repository ```git clone https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste.git ```
+2) Navigate to the direction in which you'd like to install our project using the command line
+3) run ```python3 -m venv ./.venv``` to create a hidden virtual environment directory
+4) Run the following command to clone the repository ```git clone https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste.git ```
 
 # How to Run
 
