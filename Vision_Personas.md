@@ -4,7 +4,10 @@ FOR students WHO work with poorly scanned PDFs or paper handouts, openHighlightC
 ## Personas
 #### Charlie
 
+
 #### Alex
+Alex, 20,  is an international student from Spain. She is currently studying at Temple University. She is Biology major but due to the robustness of her major classes she needs a tool to store her high-lighted notes. This will help her review important topics and terminology. Besides being a student, Alex enjoys the outdoors and music. She likes talking in Spanish with her fam/friends.
+
 
 #### James   
 James, 44, has decided to take an evening class at his local community center to learn Spanish, which has been a lifelong goal of his. He hasn’t taken any classes since he graduated with his Associate IT degree at 20, so being in a classroom again feels new. The teacher hands out weekly packets that include vocabulary lists, reading assignments, and writing assignments.  James likes to highlight the words he is struggling with to continue to review later, and reviews by looking through the entire packet.  He is interested in using openHighlightCopyPaste to easily scan these words and have them in a separate, digital, source to easily review.
