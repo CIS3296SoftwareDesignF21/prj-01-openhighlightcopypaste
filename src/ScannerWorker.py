@@ -5,7 +5,7 @@ except ImportError:
 
 import pytesseract # only accepts rgb values so convert vals
 
-class ScannerWorkerThread:
-       def test(self):
-              print(pytesseract.image_to_boxes(Image.open('../data/txt1.png')))
+class ScannerWorker:
+       def test(self, path):
+              print(pytesseract.image_to_boxes(Image.open(path)))
 
