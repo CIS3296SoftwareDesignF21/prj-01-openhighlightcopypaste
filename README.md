@@ -10,14 +10,18 @@ This software project will be using python language with opencv and pytesseract 
 * [Week 1](week1.md)
 
 
-# How to Install
+# How to Install for Development and Testing (dev)
 
 1) Follow instructions [here](https://www.python.org) to install the latest version of python
 2) Navigate to the direction in which you'd like to install our project using the command line
-3) run ```python3 -m venv ./.venv``` to create a hidden virtual environment directory
+3) Run ```python3 -m venv ./.venv``` to create a hidden virtual environment directory
 4) Run the following command to clone the repository ```git clone https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste.git ```
+5) Run the following command to activate the virtual enviroment ```source .venv/bin/activate```
+6) Run the following command to install all python dependencies ```pip install -r requirements.txt```
 
-# How to Run
+# How to Run (dev)
 
 Run the following command from the top level of the repository 
 ```python3 src/main.py ```
+
+# How to Run and Install (user)
