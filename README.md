@@ -50,15 +50,28 @@ Then follow the prompts in your command line
 2) Follow instructions [here](https://tesseract-ocr.github.io/tessdoc/Compiling.html) to install the tesseract binary. Make sure you update your PATH variable with the path to tesseract's binary, or verify that the binary is already installed by running ```which tesseract```
 
 ## Installation
-1) Go to most recent release and download .whl file.
-2) Open directory where you downloaded the .whl file and run the following command:
-```pip install <.whl file name here> ```
+### Option 1 - pip
+1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *openHighlightCopyPaste-1.0.0a1-py3-none-any.whl*
+2) Open directory where you downloaded the file and run the following command:
+```pip install openHighlightCopyPaste-1.0.0a1-py3-none-any.whl ```
+
+### Option 2 - source code
+1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download zipped source code
+2) Unzip and navigate to the src folder in the project.
 
 ## Running
+### Option 1 - installed with pip
 Run the following command:       
 MacOS/Linux ```python3 -m src.main path/to/image/here```    
 Windows ```py -m src.main path/to/image/here ``` 
 
 You will then be prompted to either print out the text, or to show the boundaries of the letters/words. Select the option you wish. 
 
+### Option 2 - installed source code
 
+MacOS/Linux run:
+```python3 main.py path/to/image/here ```     
+Windows run:
+```py main.py path/to/image/here ```
+
+You will then be prompted to either print out the text, or to show the boundaries of the letters/words. Select the option you wish. 
