@@ -2,26 +2,41 @@
 
 This software project will be using python language with opencv and pytesseract library to create a program which will take users pdf files and pictures and output their highlighted text. This program is important for students who use highlighting tool for notetaking since it can be robust to go through pages of files to review notes, it can be better to have all notes in one place. In addition to students, this program will benefit companies who wants to ...
 
-#### [Project Proposal](projectProposal.md)
+## Development Documents
 
-#### [Vision Statement and Personas](Vision_Personas.md)
+#### [UML Diagram (initial proposal)](docs/devDocs/UML/openHighlightCopyPaste.drawio.png)
+
+#### [Project Proposal](docs/devDocs/projectProposal.md)
+
+#### [Vision Statement and Personas](docs/devDocs/Vision_Personas.md)
 
 ### Project Contributions and Accomplishments
-* [Week 1](week1.md)
+* [Week 1](docs/devDocs/week1.md)
 
 
 # How to Install for Development and Testing (dev)
 
+## Dependencies
+
 1) Follow instructions [here](https://www.python.org) to install the latest version of python
-2) Navigate to the direction in which you'd like to install our project using the command line
-3) Run ```python3 -m venv ./.venv``` to create a hidden virtual environment directory
-4) Run the following command to clone the repository ```git clone https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste.git ```
-5) Run the following command to activate the virtual enviroment ```source .venv/bin/activate```
-6) Run the following command to install all python dependencies ```pip install -r requirements.txt```
+2) Follow instructions [here](https://tesseract-ocr.github.io/tessdoc/Compiling.html) to install the tesseract binary. Make sure you update your PATH variable with the path to tesseract's binary, or verify that the binary is already installed by running ```which tesseract```
+
+
+## Our project
+1) Navigate to the direction in which you'd like to install our project using the command line
+2) Run ```python3 -m venv ./.venv``` to create a hidden virtual environment directory
+3) Run the following command to clone the repository ```git clone https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste.git ```
+4) Run the following command to activate the virtual enviroment ```source .venv/bin/activate```
+5) Run the following command to install all python dependencies ```pip install -r requirements.txt```
 
 # How to Run (dev)
 
-Run the following command from the top level of the repository 
-```python3 src/main.py ```
+Run the following commands from the directory which contains .venv and the repository
+```cd prj-01-openhighlightcopypaste```
+```cd src```
+```python3 main.py ``` OR ```python3 main.py path/to/image/here ```
+
+Then follow the prompts in your command line
+
 
 # How to Run and Install (user)
