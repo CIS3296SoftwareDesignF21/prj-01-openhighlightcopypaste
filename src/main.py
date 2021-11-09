@@ -20,7 +20,7 @@ def main():
     #MAIN logic
     while(1):
         print("Hello user. Thank you for using (beta) openHighlightCopyPaste. Not all functionality is avalible. Please choose your options below: ")
-        print("1) Basic OCR\n2) Generate Boundary boxes")
+        print("1) Basic OCR\n2) Generate Boundary boxes\n3) Get New Img w/ txt wrap in Red Box")
         
         choice = input("Enter choice: ")
         choice = int(choice)
@@ -28,6 +28,8 @@ def main():
             print(workerClass.basicOCR())
         elif choice == 2:
             print(workerClass.genBoundaryBoxes())
+        elif choice == 3:
+            print(workerClass.genRedBox())
         else:
             print("please choose one of the options above.")
 
