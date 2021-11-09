@@ -1,5 +1,6 @@
 #in src package
 from src import ScannerWorker
+
 #for main command line args
 import sys
 
@@ -9,12 +10,13 @@ def main():
     #parse number of user command line arguments
     numArguments = len(sys.argv)
     #determine if they have their own file, or if they want to run our test functionality
-    if numArguments == 1:
-        workerClass = ScannerWorker.ScannerWorker('../data/txt1.png')
-    elif numArguments == 2:
+    #if numArguments == 1:
+     #   workerClass = ScannerWorker.ScannerWorker('../data/txt1.png')
+    if numArguments == 2:
         workerClass = ScannerWorker.ScannerWorker(sys.argv[1])
     else:
-        print("please invoke the program with 0 or 1 arguments")
+        print("please invoke the program with 1 argument (the image file)")
+        exit()
         
     #MAIN logic
     while(1):
