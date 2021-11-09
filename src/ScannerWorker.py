@@ -18,7 +18,6 @@ class ScannerWorker:
         return pytesseract.image_to_boxes(Image.open(self.path_to_image))
 
     def genRedBox(self):
-        pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'  # run which tesseract in cmd prompt
         img = cv2.imread('../data/txt1.png')
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         # print(pytesseract.image_to_string(img)) # pyT library func
