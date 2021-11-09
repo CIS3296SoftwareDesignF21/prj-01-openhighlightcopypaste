@@ -1,5 +1,6 @@
 #in src package
-import ScannerWorker
+from src import ScannerWorker
+
 #for main command line args
 import sys
 

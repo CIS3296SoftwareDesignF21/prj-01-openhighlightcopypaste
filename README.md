@@ -1,4 +1,4 @@
-# Project 
+# openHighlightCopyPaste
 
 This software project will be using python language with opencv and pytesseract library to create a program which will take users pdf files and pictures and output their highlighted text. This program is important for students who use highlighting tool for notetaking since it can be robust to go through pages of files to review notes, it can be better to have all notes in one place. In addition to students, this program will benefit companies who wants to ...
 
@@ -12,6 +12,7 @@ This software project will be using python language with opencv and pytesseract 
 
 ### Project Contributions and Accomplishments
 * [Week 1](docs/devDocs/week1.md)
+* [Week2](docs/devDocs/week2.md)
 
 
 # How to Install for Development and Testing (dev)
@@ -33,10 +34,31 @@ This software project will be using python language with opencv and pytesseract 
 
 Run the following commands from the directory which contains .venv and the repository
 ```cd prj-01-openhighlightcopypaste```
-```cd src```
-```python3 main.py ``` OR ```python3 main.py path/to/image/here ```
+```cd src```        
+MacOS/Linux run:
+```python3 main.py ``` OR ```python3 main.py path/to/image/here ```     
+Windows run:
+```py main.py ``` OR ```py main.py path/to/image/here ```
 
 Then follow the prompts in your command line
 
 
 # How to Run and Install (user)
+## Installation Prerequisites
+
+1) Follow instructions [here](https://www.python.org) to install the latest version of python, including pip
+2) Follow instructions [here](https://tesseract-ocr.github.io/tessdoc/Compiling.html) to install the tesseract binary. Make sure you update your PATH variable with the path to tesseract's binary, or verify that the binary is already installed by running ```which tesseract```
+
+## Installation
+1) Go to most recent release and download .whl file.
+2) Open directory where you downloaded the .whl file and run the following command:
+```pip install <.whl file name here> ```
+
+## Running
+Run the following command:       
+MacOS/Linux ```python3 -m src.main path/to/image/here```    
+Windows ```py -m src.main path/to/image/here ``` 
+
+You will then be prompted to either print out the text, or to show the boundaries of the letters/words. Select the option you wish. 
+
+
