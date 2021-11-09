@@ -12,6 +12,7 @@ This software project will be using python language with opencv and pytesseract 
 
 ### Project Contributions and Accomplishments
 * [Week 1](docs/devDocs/week1.md)
+* [Week2](docs/devDocs/week2.md)
 
 
 # How to Install for Development and Testing (dev)
