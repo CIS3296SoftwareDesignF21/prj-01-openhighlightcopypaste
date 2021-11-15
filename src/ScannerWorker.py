@@ -5,10 +5,24 @@ except ImportError:
 
 import pytesseract
 import cv2
+import os
 
 class ScannerWorker:
-    def __init__(self, path) -> None:
+
+    def __init__(self, path):
         self.path_to_image = path
+
+        #initialize tesseract binary location whenever we spawn a scanner worker
+        #point class towards tesseract binary
+        dirname = os.path.dirname(__file__)
+
+        #name of the place where the tessearct binary is found
+        filenameBin = os.path.join(dirname, '../lib/tesseract/macBuild/tesseract')
+        #name of the directory where the language data is found
+        filenameData = os.path.join(dirname, "../lib/tesseract/tessdata/")
+
+        os.environ["TESSDATA_PREFIX"] = filenameData
+        pytesseract.pytesseract.tesseract_cmd = filenameBin
 
     def basicOCR(self):
         return pytesseract.image_to_string(Image.open(self.path_to_image))
