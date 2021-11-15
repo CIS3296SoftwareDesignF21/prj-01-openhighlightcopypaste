@@ -1,4 +1,8 @@
+altgraph==0.17.2
+macholib==1.15.2
 numpy==1.21.4
 opencv-python==4.5.4.58
 Pillow==8.4.0
+pyinstaller==4.7
+pyinstaller-hooks-contrib==2021.3
 pytesseract==0.3.8
