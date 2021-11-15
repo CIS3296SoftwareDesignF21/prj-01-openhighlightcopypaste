@@ -29,7 +29,7 @@ def main():
         elif choice == 2:
             print(workerClass.genBoundaryBoxes())
         elif choice == 3:
-            print(workerClass.genRedBox())
+            print(workerClass.genRedBox1())
         else:
             print("please choose one of the options above.")
 
