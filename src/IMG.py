@@ -22,6 +22,8 @@ class IMG:
     def getOpenCVptr(self):
         return self.openCVptr
 
+    def getFilePath(self):
+        return self.imageName
 
 
 
