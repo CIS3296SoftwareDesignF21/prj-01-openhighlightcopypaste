@@ -1,0 +1,145 @@
+/* config/config.h.in.  Generated from configure.ac by autoheader.  */
+
+
+#ifndef CONFIG_AUTO_H
+#define CONFIG_AUTO_H
+/* config_auto.h: begin */
+
+
+/* Disable legacy OCR engine */
+#undef DISABLED_LEGACY_ENGINE
+
+/* Enable float for LSTM */
+#undef FAST_FLOAT
+
+/* Disable graphics */
+#undef GRAPHICS_DISABLED
+
+/* Enable AVX instructions */
+#undef HAVE_AVX
+
+/* Enable AVX2 instructions */
+#undef HAVE_AVX2
+
+/* Define to 1 if you have the <CL/cl.h> header file. */
+#undef HAVE_CL_CL_H
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Enable FMA instructions */
+#undef HAVE_FMA
+
+/* Define if you have the Accelerate framework */
+#undef HAVE_FRAMEWORK_ACCELERATE
+
+/* Define if you have the OpenCL framework */
+#undef HAVE_FRAMEWORK_OPENCL
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Enable libarchive */
+#undef HAVE_LIBARCHIVE
+
+/* Enable libcurl */
+#undef HAVE_LIBCURL
+
+/* Define to 1 if the system has the type `long long int'. */
+#undef HAVE_LONG_LONG_INT
+
+/* Enable NEON instructions */
+#undef HAVE_NEON
+
+/* Define to 1 if you have the <OpenCL/cl.h> header file. */
+#undef HAVE_OPENCL_CL_H
+
+/* Enable SSE 4.1 instructions */
+#undef HAVE_SSE4_1
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#undef HAVE_STDIO_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <tensorflow/core/framework/graph.pb.h> header
+   file. */
+#undef HAVE_TENSORFLOW_CORE_FRAMEWORK_GRAPH_PB_H
+
+/* Define to 1 if you have the <tiffio.h> header file. */
+#undef HAVE_TIFFIO_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if the system has the type `wchar_t'. */
+#undef HAVE_WCHAR_T
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Official date of release */
+#undef PACKAGE_DATE
+
+/* Name of package */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Version number */
+#undef PACKAGE_VERSION
+
+/* Official year for this release */
+#undef PACKAGE_YEAR
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
+
+
+
+/* Miscellaneous defines */
+#define AUTOCONF 1
+
+/* Not used yet
+#ifndef NO_GETTEXT
+#define USING_GETTEXT
+#endif
+*/
+
+/* config_auto.h: end */
+#endif
+

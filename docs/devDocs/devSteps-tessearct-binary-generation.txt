@@ -1,5 +1,6 @@
 What I did to get source on our repo
-cloned commit ef3bf98cc199017ec8f4711b45b38f6526868be2 to my desktop, built from that, then copy and paste the macBuild folder to our repo
+cloned commit ef3bf98cc199017ec8f4711b45b38f6526868be2 to my desktop, built from that, then copy and paste the tesseract folder to our repo - so git could properly track it
+also using git lfs to ensure that we can store all of the large libraries needed for tesseract
 
 #TODO:
 update documents reflecting what tessearct I built from
