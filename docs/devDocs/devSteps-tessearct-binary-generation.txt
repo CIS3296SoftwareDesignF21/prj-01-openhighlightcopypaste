@@ -1,0 +1,47 @@
+What I did to get source on our repo
+cloned commit ef3bf98cc199017ec8f4711b45b38f6526868be2 to my desktop, built from that, then copy and paste the macBuild folder to our repo
+
+#TODO:
+update documents reflecting what tessearct I built from
+
+
+then did the following 
+
+cd into the library
+./autogen.sh
+mkdir __sysNameHere__Build
+cd __sysNameHere__Build
+# Optionally add CXX=g++-8 to the configure command if you really want to use a different compiler.
+../configure PKG_CONFIG_PATH=/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/libarchive/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig
+make -j
+# Optionally build and install training tools.
+make training
+
+
+
+THEN I kept running into the following error code:
+
+Traceback (most recent call last):
+  File "main.py", line 38, in <module>
+    main()
+  File "main.py", line 28, in main
+    print(workerClass.basicOCR())
+  File "/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/prj-01-openhighlightcopypaste/src/ScannerWorker.py", line 22, in basicOCR
+    return pytesseract.image_to_string(Image.open(self.path_to_image))
+  File "/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/.venv/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 413, in image_to_string
+    return {
+  File "/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/.venv/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 416, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/.venv/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 284, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/.venv/lib/python3.8/site-packages/pytesseract/pytesseract.py", line 260, in run_tesseract
+    raise TesseractError(proc.returncode, get_errors(error_string))
+pytesseract.pytesseract.TesseractError: (1, 'Error opening data file 
+/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/prj-01-openhighlightcopypaste/src/../lib/tesseract/macBuild/tessdata/eng.traineddata 
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'eng\' Tesseract couldn\'t load any languages! 
+Could not initialize tesseract.')
+
+So I downloaded this file: https://github.com/tesseract-ocr/tessdata/blob/main/eng.traineddata\
+and put it in lib/tesseract/tessdata
+
+Then within the code there is a line telling the python interpreter where to find the language data and also where to find the tesseract brianmccaffrey
