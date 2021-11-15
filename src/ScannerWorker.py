@@ -18,7 +18,7 @@ class ScannerWorker:
     def genBoundaryBoxes(self):
         return pytesseract.image_to_boxes(Image.open(self.path_to_image))
 
-    def genRedBox1(self):
+    def genWordBox(self):
         img = cv2.imread('../data/txt1.png')
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         d = pytesseract.image_to_data(img,output_type=Output.DICT)
