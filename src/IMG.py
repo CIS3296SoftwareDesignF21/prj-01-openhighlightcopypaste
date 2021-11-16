@@ -1,23 +1,24 @@
 import cv2
 
 class IMG:
-    textList: []
-    boundaryDict = {}
+    
+    textList = []
+    boundaryList = []
     def __init__(self, imageName):
         self.imageName = imageName
         self.openCVptr = cv2.imread(imageName)
 
-    def appendTextList(self, word):
+    def appendTextList(self, word: str):
         self.textList.append(word)
 
     def getTextList(self):
         return self.textList
 
-    def appendBoundaryDict(self, word, boundary):
-        self.boundaryDict[word] = boundary
+    def appendBoundaryList(self, word: str, boundary: tuple):
+        self.boundaryList.append((word, boundary))
 
-    def getBoundaryDict(self):
-        return self.boundaryDict
+    def getBoundaryList(self):
+        return self.boundaryList
 
     def getOpenCVptr(self):
         return self.openCVptr

@@ -12,7 +12,8 @@ This software project will be using python language with opencv and pytesseract 
 
 ### Project Contributions and Accomplishments
 * [Week 1](docs/devDocs/week1.md)
-* [Week2](docs/devDocs/week2.md)
+* [Week 2](docs/devDocs/week2.md)
+* [Week 3](doc/devDocs/week3.md)
 
 
 # How to Install for Development and Testing (dev)
@@ -60,6 +61,9 @@ Then follow the prompts in your command line
 2) Unzip and navigate to the src folder in the project.
 
 ## Running
+
+*Important Note*        
+Image must use yellow highlight for this program to work.
 ### Option 1 - installed with pip
 Run the following command:       
 MacOS/Linux ```python3 -m src.main path/to/image/here```    
