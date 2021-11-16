@@ -33,7 +33,6 @@ class ScannerWorker:
                 boundary = (d['left'][i],d['top'][i], d['width'][i],d['height'][i])
                 word = d['text'][i]
                 self.image.appendBoundaryList(word, boundary)
-        print(self.image.getBoundaryList())
 
     def checkHighlightAmount(self, item: tuple):
         img = self.image.getOpenCVptr()
@@ -52,8 +51,6 @@ class ScannerWorker:
     def getOutput(self):
         for i in self.image.getBoundaryList():
             if (self.checkHighlightAmount(i) >= 50.0):
-                print(i[0])
                 self.image.appendTextList(i[0])
-        print(self.image.getTextList())
 
     
