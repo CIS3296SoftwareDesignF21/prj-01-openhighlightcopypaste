@@ -52,7 +52,7 @@ Then follow the prompts in your command line
 
 ## Installation
 ### Option 1 - pip
-1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *openHighlightCopyPaste-1.0.0a1-py3-none-any.whl*
+1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *openHighlightCopyPaste-1.0.1-py3-none-any.whl*
 2) Open directory where you downloaded the file and run the following command:
 ```pip install openHighlightCopyPaste-1.0.1-py3-none-any.whl ```
 
