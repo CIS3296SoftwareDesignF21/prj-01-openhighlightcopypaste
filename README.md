@@ -54,7 +54,7 @@ Then follow the prompts in your command line
 ### Option 1 - pip
 1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *openHighlightCopyPaste-1.0.0a1-py3-none-any.whl*
 2) Open directory where you downloaded the file and run the following command:
-```pip install openHighlightCopyPaste-1.0.0a1-py3-none-any.whl ```
+```pip install openHighlightCopyPaste-1.0.1-py3-none-any.whl ```
 
 ### Option 2 - source code
 1) Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download zipped source code
@@ -69,7 +69,7 @@ Run the following command:
 MacOS/Linux ```python3 -m src.main path/to/image/here```    
 Windows ```py -m src.main path/to/image/here ``` 
 
-You will then be prompted to either print out the text, or to show the boundaries of the letters/words. Select the option you wish. 
+You will then be prompted to either print out the text, or to show the boundaries of the letters/words, or get an output text file with the highlighted words. Select the option you wish. 
 
 ### Option 2 - installed source code
 
@@ -78,4 +78,4 @@ MacOS/Linux run:
 Windows run:
 ```py main.py path/to/image/here ```
 
-You will then be prompted to either print out the text, or to show the boundaries of the letters/words. Select the option you wish. 
+You will then be prompted to either print out the text, or to show the boundaries of the letters/words, or get an output text file with the highlighted words. Select the option you wish. 
