@@ -12,7 +12,7 @@ def main():
     numArguments = len(sys.argv)
     #determine if they have their own file, or if they want to run our test functionality
     if numArguments == 1:
-        workerClass = ScannerWorker.ScannerWorker(IMG.IMG('../data/txt3.png'))
+        workerClass = ScannerWorker.ScannerWorker(IMG.IMG('../data/txt4.png'))
     elif numArguments == 2:
         workerClass = ScannerWorker.ScannerWorker(IMG.IMG(sys.argv[1]))
     else:
@@ -31,6 +31,7 @@ def main():
             print(workerClass.genBoundaryBoxes())
         elif choice == 3:
             print(workerClass.genWordBox())
+            workerClass.getOutput()
         else:
             print("please choose one of the options above.")
 
