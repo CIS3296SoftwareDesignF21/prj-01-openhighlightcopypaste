@@ -21,13 +21,14 @@ class ScannerWorker:
 
     def genWordBox(self):
         img = self.image.getOpenCVptr()
+
+        ##remove highlight/clean up image for ocr portion
         img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-        # Extract the V channel
-        out_img = img_hsv[:, :, 2]
+        grey_img = img_hsv[:, :, 2]
+        out_img = cv2.adaptiveThreshold(grey_img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 20)
 
         d = pytesseract.image_to_data(out_img, output_type=Output.DICT)
         n_boxes = len(d['text'])
-
         for i in range(n_boxes):
             if int(float(d['conf'][i])) > 60:
                 boundary = (d['left'][i],d['top'][i], d['width'][i],d['height'][i])
