@@ -1,4 +1,4 @@
-## Week 1 Contributions
+## Week 3 Contributions
 
 #### Bri
 * Sequence Diagram
