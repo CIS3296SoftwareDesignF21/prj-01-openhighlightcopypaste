@@ -2,3 +2,4 @@ numpy==1.21.4
 opencv-python==4.5.4.58
 Pillow==8.4.0
 pytesseract==0.3.8
+tk==0.1.0

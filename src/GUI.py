@@ -15,6 +15,8 @@ from PIL import ImageTk, Image
 import cv2
 import pytesseract as tess
 
+import ScannerWorker
+
 # MAC CMD
 pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
 # Windows CMD
@@ -24,7 +26,7 @@ class data(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
-        self.title("OCR")
+        self.title("Highlight-Paste")
 
         container = tk.Frame(self)
         container.grid()
@@ -46,9 +48,9 @@ class data(tk.Tk):
 
         # BUTTON to CALL OCR
         self.b2_scan = tk.Button(self, text="     Process     ", bg="#ffffff", relief="flat",
-                                 width=10, command=lambda: self.ocr())
+                                 width=10, command=lambda: ScannerWorker.getOutput())
         # FOR OCR TEXT
-        self.ocr_text = tk.Text(self, height=25, width=38)
+        self.highlighted_text = tk.Text(self, height=25, width=38)
 
     def show_image(self):
         global path
@@ -76,8 +78,10 @@ class data(tk.Tk):
         b2_scan_mid = int(newX / 2);
         self.b2_scan.grid(row=17, column=0, padx=b2_scan_mid, pady=10,
                           columnspan=3, sticky="w")
-        self.ocr_text.grid(row=8, column=2, padx=800, pady=26, columnspan=3, sticky="w")
+        self.highlighted_text.grid(row=8, column=2, padx=800, pady=26, columnspan=3, sticky="w")
 
+
+'''
     def ocr(self):
         self.ocr_image = cv2.imread(self.path)
         # PREPROCESSING
@@ -106,13 +110,8 @@ class data(tk.Tk):
         text_file.close()
 
         # ADD TEXT AS FINAL OUTPUT
-        self.ocr_text.insert(tk.END, ocrtext)
-
-    def highlightedText(self):
-        pass
-
-
-
+        self.highlighted_text.insert(tk.END, ocrtext)
+'''
 
 if __name__ == "__main__":
     app = data()
