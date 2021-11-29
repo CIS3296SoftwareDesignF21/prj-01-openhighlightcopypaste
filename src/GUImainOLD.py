@@ -19,6 +19,9 @@ class data(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
         self.title("Highlight-Paste")
 
+        self.workerClass = None
+        self.ScannerImage = None
+
         container = tk.Frame(self)
         container.grid()
 
@@ -39,7 +42,7 @@ class data(tk.Tk):
 
         # BUTTON to CALL OCR
         self.b2_scan = tk.Button(self, text="     Process     ", bg="#ffffff", relief="flat",
-                                 width=10, command=lambda: ScannerWorker.getOutput())
+                                 width=10, command=lambda: self.workerClass.getOutput())
         # FOR OCR TEXT
         self.highlighted_text = tk.Text(self, height=25, width=38)
 
@@ -48,6 +51,12 @@ class data(tk.Tk):
 
         # OPEN FILE
         self.path = filedialog.askopenfilename(defaultextension="*.jpg", filetypes=(("JPG", "*.jpg"), ("PNG", "*.png")))
+        print(self.path)
+
+        #create the scannerworker class which will perform the internal logic
+        self.ScannerImage = IMG.IMG(self.path)
+        self.workerClass = ScannerWorker.ScannerWorker(self.ScannerImage)
+        
         self.path_browse.delete(0, tk.END)
         self.path_browse.insert(0, self.path)
 
