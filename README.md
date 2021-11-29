@@ -81,12 +81,12 @@ Then follow the prompts in your command line
 ## Development Documents
 
 #### Program Related
-| [Vision Statement and Personas](docs/devDocs/Vision_Personas.md) | [UML Class Diagram](docs/devDocs/UML/openHighlightWeek3DemoEdits.drawio.png) | [UML Sequence Diagram 1](docs/devDocs/UML/SeqDiaOpt1.png) | [UML Sequence Diagram 2](docs/devDocs/UML/SeqDiaOpt2.png)  |
-|---| --- | --- | --- |
+ [Vision Statement and Personas](docs/devDocs/Vision_Personas.md) | [Class Diagram](docs/devDocs/UML/openHighlightWeek3DemoEdits.drawio.png) | [Sequence Diagram 1](docs/devDocs/UML/SeqDiaOpt1.png) | [Sequence Diagram 2](docs/devDocs/UML/SeqDiaOpt2.png)  
+
 
 #### Accomplishments
-| [Weekly Accomplishments](docs/devDocs/WeeklyAccomplishments) | [Most Recent Accomplishments](docs/devDocs/WeeklyAccomplishments/week4.md) |
-| --- | --- |
+ [Weekly Accomplishments](docs/devDocs/WeeklyAccomplishments) | [Most Recent Accomplishments](docs/devDocs/WeeklyAccomplishments/week4.md) 
+
 
 
 # Future Plans
