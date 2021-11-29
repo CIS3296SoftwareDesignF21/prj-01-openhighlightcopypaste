@@ -1,9 +1,13 @@
 # openHighlightCopyPaste
 
+[About](#about) | [Users](#users) | [Developers](#developers) | [Future Plans](#future-plans)
+
+
 # About
 OpenHighlightCopyPaste takes an image of a document as input and extracts the highlighted words. Currently, the intended users are students or anybody else that has use of the program. The user needs to be somewhat tech-savvy to be able to install the required dependencies. 
 
 openHighlightCopyPaste was created solely with the Python language and implements the Python OpenCV and Pytesseract libraries. Pytesseract is a wrapper for Google's Tesseract-OCR Engine and is for text recognition in the program. OpenCV is used for image handling, including cleaning up the image for OCR processing and determining the highlighted words. 
+
 
 # Users
 
@@ -72,7 +76,8 @@ Windows run:
 
 Then follow the prompts in your command line
 
----
+
+
 ## Development Documents
 
 #### Program Related
@@ -82,6 +87,7 @@ Then follow the prompts in your command line
 #### Accomplishments
 | [Weekly Accomplishments](docs/devDocs/WeeklyAccomplishments) | [Most Recent Accomplishments](docs/devDocs/WeeklyAccomplishments/week4.md) |
 | --- | --- |
+
 
 # Future Plans
 
