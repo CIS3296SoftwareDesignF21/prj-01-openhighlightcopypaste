@@ -42,9 +42,19 @@ class data(tk.Tk):
 
         # BUTTON to CALL OCR
         self.b2_scan = tk.Button(self, text="     Process     ", bg="#ffffff", relief="flat",
-                                 width=10, command=lambda: self.workerClass.getOutput())
+                                 width=10, command=lambda: self.performOCRandUpdateTextBox())
         # FOR OCR TEXT
         self.highlighted_text = tk.Text(self, height=25, width=38)
+
+    def performOCRandUpdateTextBox(self):
+        self.workerClass.genWordBox()
+        self.workerClass.getOutput()
+
+        outputStr = ""
+        for words in self.ScannerImage.getTextList():
+            outputStr += words +"\n"
+            print("inforloop")
+        self.highlighted_text.insert(tk.END, outputStr)
 
     def show_image(self):
         global path
@@ -56,7 +66,7 @@ class data(tk.Tk):
         #create the scannerworker class which will perform the internal logic
         self.ScannerImage = IMG.IMG(self.path)
         self.workerClass = ScannerWorker.ScannerWorker(self.ScannerImage)
-        
+
         self.path_browse.delete(0, tk.END)
         self.path_browse.insert(0, self.path)
 
