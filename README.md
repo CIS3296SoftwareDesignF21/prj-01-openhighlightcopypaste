@@ -72,17 +72,19 @@ Windows run:
 
 Then follow the prompts in your command line
 
-
+---
 ## Development Documents
 
-#### [UML Diagram (initial proposal)](docs/devDocs/UML/openHighlightCopyPaste.drawio.png)
+#### Program Related
+| [Vision Statement and Personas](docs/devDocs/Vision_Personas.md) | [UML Class Diagram](docs/devDocs/UML/openHighlightWeek3DemoEdits.drawio.png) | [UML Sequence Diagram 1](docs/devDocs/UML/SeqDiaOpt1.png) | [UML Sequence Diagram 2](docs/devDocs/UML/SeqDiaOpt2.png)  |
+|---| --- | --- | --- |
 
-#### [Project Proposal](docs/devDocs/projectProposal.md)
+#### Accomplishments
+| [Weekly Accomplishments](docs/devDocs/WeeklyAccomplishments) | [Most Recent Accomplishments](docs/devDocs/WeeklyAccomplishments/week4.md) |
+| --- | --- |
 
-#### [Vision Statement and Personas](docs/devDocs/Vision_Personas.md)
+# Future Plans
 
-### Project Contributions and Accomplishments
-* [Week 1](docs/devDocs/week1.md)
-* [Week 2](docs/devDocs/week2.md)
-* [Week 3](doc/devDocs/week3.md)
-
+* Package program completely to expand user base
+* Distinguish different lists based on highlight color
+* GUI app with realtime PDF rendering, highlighting, and text return
