@@ -53,7 +53,6 @@ class data(tk.Tk):
         outputStr = ""
         for words in self.ScannerImage.getTextList():
             outputStr += words +"\n"
-            print("inforloop")
         self.highlighted_text.insert(tk.END, outputStr)
 
     def show_image(self):
