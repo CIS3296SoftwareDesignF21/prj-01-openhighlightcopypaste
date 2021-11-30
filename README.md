@@ -18,7 +18,7 @@ Highlight-Paste was created solely with the Python language and implements the P
 2) Follow instructions [here](https://tesseract-ocr.github.io/tessdoc/Compiling.html) to install the tesseract binary. Make sure you update your PATH variable with the path to tesseract's binary, or verify that the binary is already installed by running ```which tesseract```
 
 ### Installation
-Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *Highlight-Paste.exe*
+Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-openhighlightcopypaste/releases) and download *Highlight-Paste.exe* for Windows or *Highlight-Paste* for Mac/Unix.
 
 ## How to Run
 **Prerequisites to installation MUST be completed for program to work!**  
