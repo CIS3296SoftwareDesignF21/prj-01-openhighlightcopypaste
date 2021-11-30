@@ -81,7 +81,7 @@ on your given system to produce a packaged file that works for that system.
 ## Development Documents
 
 #### Program Related
- [Vision Statement and Personas](docs/devDocs/Vision_Personas.md) | [Class Diagram](docs/devDocs/UML/openHighlightWeek3DemoEdits.drawio.png) | [Sequence Diagram 1](docs/devDocs/UML/SeqDiaOpt1.png) | [Sequence Diagram 2](docs/devDocs/UML/SeqDiaOpt2.png)  
+ [Vision Statement and Personas](docs/devDocs/Vision_Personas.md) | [Class Diagram](docs/devDocs/UML/Highlight_Paste.drawio.png) | [Sequence Diagram 1](docs/devDocs/UML/SeqDiaOpt1.png) | [Sequence Diagram 2](docs/devDocs/UML/SeqDiaOpt2.png)  
 
 
 #### Accomplishments
