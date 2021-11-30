@@ -1,0 +1,3 @@
+([('Highlight-Paste',
+   '/Users/brianmccaffrey/Documents/Uni/Senior/SoftwareDesignFinal/prj-01-openhighlightcopypaste/src/dist/Highlight-Paste',
+   'EXECUTABLE')],)
