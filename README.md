@@ -24,7 +24,8 @@ Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-o
 **Prerequisites to installation MUST be completed for program to work!**  
 
 *Running*
-* Run Highlight-Paste.exe
+* Windows: Run Highlight-Paste.exe
+* Mac/Unix based: Double click Highlight-Paste executable file
 * Select image file (either .png or .jpg) via input form in window.
 * Select process to return list of highlighted words. You can copy the returned words from the screen into your own file.
 
@@ -35,17 +36,20 @@ Go to most recent [release](https://github.com/CIS3296SoftwareDesignF21/prj-01-o
 *Additional note for Winows users:*       
 When running the program for the first time Microsoft Defenfer may try to block the app because it is unrecognized. Select *More info* and then select *Run anyway*. 
 
+*Additional note for Mac users:* 
+If you are unable to open the executable file for security reasons (as described above) navigate to System Preferences > Security and Privacy > General, and there should be an option along the bottom to allow this app
+
 
 # Developers
 ## How to Install for Development and Testing 
 
-### Dependencies
+### Installing Dependencies
 
 1) Follow instructions [here](https://www.python.org) to install the latest version of python
 2) Follow instructions [here](https://tesseract-ocr.github.io/tessdoc/Compiling.html) to install the tesseract binary. Make sure you update your PATH variable with the path to tesseract's binary, or verify that the binary is already installed by running ```which tesseract```
 
 
-### The project
+### Installing The Project
 1) Navigate to the direction in which you'd like to install our project using the command line
 2) Run one of the following to create a hidden virtual environment directory:        
    MacOS/Linux: ```python3 -m venv ./.venv```      
@@ -66,7 +70,13 @@ MacOS/Linux run:
 Windows run:
 ```py GUImain.py ``` 
 
+## Building for distribution
 
+We use PyInstaller to build for distribution. Run:
+
+```pyinstaller GUImain.py IMG.py ScannerWorker.py --windowed --name=Highlight-Paste --onefile```
+
+on your given system to produce a packaged file that works for that system.
 
 ## Development Documents
 
